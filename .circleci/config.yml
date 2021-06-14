@@ -28,7 +28,8 @@ jobs:
             python3 --version
             python3 -m venv venv
             source venv/bin/activate
-            pip install --upgrade -r requirements.txt
+            python -m pip install -U pip
+            python -m pip install --upgrade -r requirements.txt
 
             curl -sSL https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-226.0.0-linux-x86_64.tar.gz | tar -C venv/ -xzf -
             echo 'export PATH="${HOME}/repo/venv/bin:${HOME}/repo/venv/google-cloud-sdk/bin:${PATH}"' >> ${BASH_ENV}
@@ -101,7 +102,8 @@ jobs:
           command: |
             python3 -m venv venv
             source venv/bin/activate
-            pip install --upgrade -r requirements.txt
+            python -m pip install -U pip
+            python -m pip install --upgrade -r requirements.txt
 
             curl -sSL https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-226.0.0-linux-x86_64.tar.gz | tar -C venv/ -xzf -
 

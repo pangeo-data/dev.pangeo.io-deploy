@@ -45,6 +45,12 @@ daskhub:
           description: "https://github.com/ICESAT-2HackWeek/jupyter-image-2020"
           kubespawner_override:
             image: uwhackweeks/icesat2:latest
+        - display_name: "Climate Trace Project"
+          description: "https://github.com/carbonplan/trace/tree/main/envs/python-notebook"
+          kubespawner_override:
+            mem_limit: 64G
+            mem_guarantee: 32G
+            image: carbonplan/trace-python-notebook:sha-4787439
     proxy:
       https:
         enabled: true
