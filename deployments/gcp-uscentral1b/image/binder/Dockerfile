@@ -1,1 +1,1 @@
-FROM pangeo/pangeo-notebook:2021.04.26
+FROM pangeo/pangeo-notebook:2021.07.06
