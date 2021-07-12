@@ -5,7 +5,7 @@ name: pangeo-deploy
 version: 0.1.0
 dependencies:
   - name: daskhub
-    version: "4.5.6"
+    version: "2021.7.0"
     repository: https://helm.dask.org
     import-values:
       - child: rbac
